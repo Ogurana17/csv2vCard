@@ -87,7 +87,7 @@ function makeCSV(csvdata) {
                     vCardStr += "item1.URL; type = pref:" + data[i][j] + "\n";
                     break;
                 case 9:
-                    vCardStr += "CATEGORIES:" + data[i][j] + "\n";
+                    vCardStr += "TEL;type=CELL;type=VOICE;type=pref:" + data[i][j] + "\n";
                     break;
             }
         }
