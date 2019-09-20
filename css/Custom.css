@@ -8,12 +8,11 @@ footer {
     word-break: break-all;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
     .table-responsive-lg {
         word-break: normal;
     }
 }
-
 
 .page-header {
     padding-bottom: 11px;
