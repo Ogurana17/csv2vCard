@@ -1,0 +1,15 @@
+footer {
+    padding: 40px 0;
+    color: #eee;
+    background-color: #333;
+}
+
+.page-header {
+    padding-bottom: 11px;
+    margin: 48px 0 24px;
+    border-bottom: 1px solid #eee;
+}
+
+#outputText{
+    height: 15vh;
+}

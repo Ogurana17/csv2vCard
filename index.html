@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>csv2vCard</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/Custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header" id="banner">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>csv2vCard</h1>
+                    <p class="lead">csv to vcard conversion.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="bs-component">
+                <div class="jumbotron">
+                    <h1>How use</h1>
+                    <ol class="lead">
+                        <li>Select csv file.</li>
+                        <li>Click <b>"Download".</b></li>
+                        </li>
+                    </ol>
+                    <p>It's so easy ;-)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="well bs-component">
+                        <div class="form-horizontal">
+                            <fieldset>
+                                <legend>Information</legend>
+                                <form>
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="loadBtn"
+                                                    aria-describedby="inputGroupFileAddon01">
+                                                <label class="custom-file-label" for="inputGroupFile01">Choose
+                                                    file</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea type="text" id="outputText" class="form-control" aria-label="With textarea"></textarea>
+                                    </div>
+                                </form>
+                                <div class="form-group">
+                                    <a id="btn" download="AddressBook.vcf">Download</a>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="small">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center copyright">
+                    &copy; 2019 Naoki Ogura
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="csv2vCard.js"></script>
+</body>
+
+</html>
