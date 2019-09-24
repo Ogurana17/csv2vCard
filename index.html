@@ -25,41 +25,18 @@
             <div class="bs-component">
                 <div class="jumbotron">
                     <h2>How use</h2>
-                    <h3>Please format CSV in the following column order.</h3>
-                    <table class="table table-striped table-responsive-lg">
-                        <thead>
-                            <tr>
-                                <th scope="col">(FirstName;LastName)</th>
-                                <th scope="col">FullName</th>
-                                <th scope="col">PhoneticFirstName</th>
-                                <th scope="col">PhoneticLastName</th>
-                                <th scope="col">ORG</th>
-                                <th scope="col">PhoneticORG</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">WorkAddress</th>
-                                <th scope="col">URL</th>
-                                <th scope="col">PhoneNumbers</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Hoheto;Irohani</td>
-                                <td>Irohani Hoheto</td>
-                                <td>hoheto</td>
-                                <td>irohani</td>
-                                <td>IROHA</td>
-                                <td>iroha</td>
-                                <td>hoheto@iroha.com</td>
-                                <td>Iroha200-10;Winooku;hoheto;168-20010;Japan</td>
-                                <td>https://www.iroha.com</td>
-                                <td>1682-000-010</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
                     <ol class="lead">
-                        <li>Select csv file.</li>
-                        <li>Click <b>"Download".</b></li>
+                        <li>Create an address book in a <a href="https://sheet.new">GoogleSpreadsheet</a> and download
+                            it as a csv file.</li>
+                        <h3>GoogleSpreadsheet</h3>
+                        <iframe style="max-width:100%;" height="130px" width=1200px
+                            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQbS27snY8SQ7qvCninjw4L7-mnemmp53v1cvvuNR38OwaMjVndB5_GOiZXne_tHam1wxkEnot6jWCx/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe><br>
+                        <h3>Downloaded csv</h3>
+                        <textarea class="form-control" rows="2" readonly="readonly"
+                            wrap="off">FirstName;LastName;FullName;PhoneticFirstName;PhoneticLastName;ORG;PhoneticORG;Email;WorkAddress;URL;PhoneNumbers&#13;Hoheto;Irohani;Irohani Hoheto;hoheto;irohani;IROHA;iroha;hoheto@iroha.com;Iroha200-10;Winooku;hoheto;168-20010;Japan;https://www.iroha.com;1682-000-010</textarea>
+                        </li>
+                        <li>Select the downloaded csv.</li>
+                        <li>Click <b>"Download vCard".</b></li>
                         </li>
                     </ol>
                     <p>It's so easy ;-)</p>
@@ -91,7 +68,7 @@
                                     </div>
                                 </form>
                                 <div class="form-group">
-                                    <a id="btn" download="AddressBook.vcf">Download</a>
+                                    <a id="btn" download="AddressBook.vcf">Download vCard</a>
                                 </div>
                             </fieldset>
                         </div>
@@ -113,7 +90,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="csv2vCard.js"></script>
+    <script src="js/csv2vCard.js"></script>
 </body>
 
 </html>
