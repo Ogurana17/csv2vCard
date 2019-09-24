@@ -72,7 +72,7 @@ function makeCSV(csvdata) {
                     vCardStr += "X-PHONETIC-LAST-NAME:" + data[i][j] + "\n";
                     break;
                 case 4:
-                    vCardStr += "ORG:;" + data[i][j] + "\n";
+                    vCardStr += "ORG:" + data[i][j] + "\n";
                     break;
                 case 5:
                     vCardStr += "X-PHONETIC-ORG:" + data[i][j] + "\n";
